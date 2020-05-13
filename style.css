@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  margin: 0px 300px 0px 300px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-gap: 1px;
+}
+
+.navigation ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.navigation a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
