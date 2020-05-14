@@ -12,14 +12,45 @@ a {
   margin: 0 auto;
 }
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 60px;
+}
+
 .navigation ul {
   display: flex;
-  justify-content: center;
-  padding-top: 5em;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
+  background: linear-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#686868),
+    color-stop(50%, #5e5e5e),
+    color-stop(50%, #707070),
+    to(#8d8d8d)
+  );
+  background: linear-gradient(
+    to bottom,
+    #686868,
+    #5e5e5e 50%,
+    #707070 50%,
+    #8d8d8d
+  );
 }
 
 .navigation ul > li > a {
-  padding-right: 5em;
+  padding-right: 2em;
+}
+
+.navigation ul > li > a:hover {
+  background-color: violet;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .main-content {
