@@ -1,29 +1,57 @@
 html {
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-body {
-  margin: 0px 300px 0px 300px;
-}
-
-img {
-  max-width: 100%;
+a {
+  text-decoration: none;
 }
 
 .container {
-  display: grid;
-  grid-gap: 1px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .navigation ul {
-  display: grid;
-  list-style: none;
-  grid-template-columns: repeat(9, 1fr);
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
 }
 
-.navigation a {
-  display: block;
-  text-decoration: none;
-  text-align: center;
+.navigation ul > li > a {
+  padding-right: 5em;
+}
+
+.main-content {
+  background: url('./images/bg-img.jpg') no-repeat;
+  width: 100%;
+  height: 600px;
+  background-position: center -720px;
+}
+
+.big-img-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 5em;
+  text-decoration: solid;
+  cursor: pointer;
+}
+
+h3 {
+  line-height: 0rem;
+  font-size: 1rem;
+}
+
+h3:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2:nth-child(2) {
+  line-height: 1rem;
 }
