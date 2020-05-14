@@ -4,7 +4,7 @@ Building with Backgrounds and Gradients Project
 
 ![screenshot](./images/GvtAbDl.jpg)
 
-The page tries to replicate as much as possible the old version of Apple page Web page.
+The page tries to replicate as much as possible the old version of Apple Web page.
 
 ## Built With
 
