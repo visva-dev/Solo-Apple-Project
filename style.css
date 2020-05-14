@@ -80,7 +80,6 @@ a {
 .navigation-input:focus {
   outline: none;
   width: 6rem;
-  border-bottom: 1px solid #eee;
 }
 
 ul {
