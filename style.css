@@ -26,20 +26,34 @@ a {
   padding-top: 60px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .navigation ul {
   display: flex;
   text-decoration: none;
   box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
-  background-image: linear-gradient(
-    180deg,
-    #818581 0%,
-    #7c807c 20%,
-    #727272 50%,
-    #5f5f5f 50%,
-    #6d6d6d 95%
-  );
+  background-image:
+    linear-gradient(
+      180deg,
+      #818581 0%,
+      #7c807c 20%,
+      #727272 50%,
+      #5f5f5f 50%,
+      #6d6d6d 95%
+    );
   border-radius: 3px;
   padding: 8px;
+}
+
+footer > h4 > a {
+  color: #08c;
+}
+
+.usa-flag a {
+  padding-left: 5px;
+  font-size: 0.7rem;
 }
 
 .navigation ul > li > a {
@@ -60,13 +74,14 @@ a {
 .navigation-search {
   color: #fff;
   border-radius: 1rem;
-  background-image: linear-gradient(
-    180deg,
-    #818581 0%,
-    #7c807c 20%,
-    #727272 50%,
-    #5f5f5f 50%
-  );
+  background-image:
+    linear-gradient(
+      180deg,
+      #818581 0%,
+      #7c807c 20%,
+      #727272 50%,
+      #5f5f5f 50%
+    );
   border: 1px solid #5f5f5f;
   padding-left: 2.5rem;
   width: 9rem;
@@ -87,10 +102,6 @@ a {
   position: absolute;
   right: 580px;
   top: 72px;
-}
-
-ul {
-  list-style-type: none;
 }
 
 .main-content {
@@ -157,18 +168,9 @@ footer > h4 {
   align-items: center;
 }
 
-footer > h4 > a {
-  color: #08c;
-}
-
 footer > h4:last-child {
   flex: auto;
   margin-left: 135px;
-}
-
-.usa-flag a {
-  padding-left: 5px;
-  font-size: 0.7rem;
 }
 
 .usa-flag a:nth-child(1) {
