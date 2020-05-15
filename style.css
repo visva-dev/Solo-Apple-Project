@@ -1,10 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html {
-  box-sizing: border-box;
+body {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -15,6 +15,8 @@ a {
 .container {
   max-width: 1500px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .navigation {
@@ -52,7 +54,6 @@ a {
 }
 
 .navigation ul > li:first-child {
-  background-image: url('./images/apple-home.png');
   background-repeat: no-repeat;
 }
 
@@ -73,13 +74,19 @@ a {
 }
 
 .navigation-input {
-  width: 5rem;
+  width: 4rem;
   border-radius: 3px;
 }
 
 .navigation-input:focus {
   outline: none;
-  width: 6rem;
+  width: 5rem;
+}
+
+.navigation-search .fa-search {
+  position: absolute;
+  right: 580px;
+  top: 72px;
 }
 
 ul {
@@ -91,6 +98,7 @@ ul {
   width: 100%;
   height: 600px;
   background-position: center -720px;
+  background-size: cover;
 }
 
 .big-img-text {
@@ -104,23 +112,17 @@ ul {
 }
 
 .boxes {
+  margin-top: 2px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 204px;
-  margin-bottom: 20px;
+  justify-content: space-between;
 }
 
-.box-1 {
-  padding-right: 4px;
+.boxes > div {
+  flex-basis: 24.9%;
 }
 
-.box-2 {
-  padding-right: 4px;
-}
-
-.box-3 {
-  padding-right: 4px;
+.boxes > div > a > img {
+  width: 100%;
 }
 
 h3 {
@@ -144,6 +146,7 @@ h2:nth-child(2) {
 footer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 footer > h4 {
@@ -156,6 +159,11 @@ footer > h4 {
 
 footer > h4 > a {
   color: #08c;
+}
+
+footer > h4:last-child {
+  flex: auto;
+  margin-left: 135px;
 }
 
 .usa-flag a {
